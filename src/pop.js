@@ -118,7 +118,7 @@ const popCard = async (data) => {
             Inputcoment.value = "";
 
           }
-          // window.location.reload();
+
         });
       });
     }
