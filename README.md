@@ -13,6 +13,8 @@ In this project we will prepare a Kanban board with a GitHub project, with my Le
 - WEBPACK
 - API service
 
+## Live Link to the Project
+[Live Link](https://aakbarkhan.github.io/Cfood/dist/)
 ## Getting Started
 
 **To clone this project**

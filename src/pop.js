@@ -96,8 +96,10 @@ const popCard = async (data) => {
       submitCom.innerHTML = 'Comment';
       form.appendChild(submitCom);
       const formts = document.querySelectorAll('.form_x');
-      formts.forEach((form) => {
+      formts.forEach((form,i) => {
         form.addEventListener('submit', async (e) => {
+          // console.log(e.target.id);
+          // console.log(form.id)
           e.preventDefault();
           e.stopPropagation();
           const id = document.querySelector(`#content2-${form.id}`);
@@ -105,8 +107,18 @@ const popCard = async (data) => {
           const Inputcoment = document.querySelector(`#insight-${form.id}`);
           const namev = Inputname.value;
           const commentv = Inputcoment.value;
-          await postComments(id.id, namev, commentv);
-          window.location.reload();
+          if (e.target ) {
+            await postComments(id.id, namev, commentv);
+            const special = document.createElement('p');
+          special.innerText = new Date() +" "+ namev +" " +commentv;
+            allComments.appendChild(special);
+            console.log(commentsAll[i]);
+            console.log(id.id)
+            Inputname.value = "";
+            Inputcoment.value = "";
+
+          }
+          // window.location.reload();
         });
       });
     }
