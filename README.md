@@ -4,9 +4,7 @@ In this project we will prepare a Kanban board with a GitHub project, with my Le
 
 ![image] ![screenshot](photo.jpg)
 
-## Video link
 
-[loom Link] (https://www.loom.com/share/34a8fafee64f46ab80646a7e8e8e1bf7)
 ## Built With
 
 - HTML
